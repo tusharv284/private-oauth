@@ -1,0 +1,64 @@
+{
+  "appName": "Google",
+  "appUrl": "https://console.cloud.google.com",
+  "tier": "self_serve_review",
+  "devAccessEstimate": "Same day for non-sensitive scopes (basic profile and email). No review needed to start developing.",
+  "productionEstimate": "Three separate tracks depending on scope. Sensitive scopes: brand verification, Google's own published estimate is 2-3 business days. Restricted scopes: a security assessment, several weeks, no fixed number published by Google.",
+  "steps": [
+    {
+      "order": 1,
+      "action": "Create a project in Google Cloud Console and configure the OAuth consent screen",
+      "confidence": "verified",
+      "sourceUrl": "https://support.google.com/cloud/answer/13463817?hl=en"
+    },
+    {
+      "order": 2,
+      "action": "If your app only requests non-sensitive scopes (basic profile, email), you can launch without submitting for verification",
+      "confidence": "verified",
+      "sourceUrl": "https://support.google.com/cloud/answer/13463817?hl=en"
+    },
+    {
+      "order": 3,
+      "action": "If your app requests sensitive scopes, submit for brand verification. Google's published estimate is 2-3 business days",
+      "confidence": "verified",
+      "sourceUrl": "https://support.google.com/cloud/answer/13463817?hl=en"
+    },
+    {
+      "order": 4,
+      "action": "If your app requests restricted scopes, complete a security assessment in addition to verification. This can take several weeks and Google does not publish a fixed timeline",
+      "confidence": "verified",
+      "sourceUrl": "https://support.google.com/cloud/answer/13463817?hl=en"
+    },
+    {
+      "order": 5,
+      "action": "Verify domain ownership in Google Search Console under a Project Owner or Editor account before submitting a restricted-scope verification. Missing this is a common cause of stalled reviews",
+      "confidence": "reported",
+      "sourceUrl": "https://singhamandeep.com/?p=1402"
+    }
+  ],
+  "blockers": [
+    {
+      "description": "An unverified app requesting sensitive or restricted scopes is capped at 100 total users and shows an \"unverified app\" warning until verification clears",
+      "sourceUrl": "https://support.google.com/cloud/answer/13463817?hl=en"
+    },
+    {
+      "description": "A mismatch between the scopes requested in your app's code and the scopes configured on the consent screen forces the unverified-app warning, even post-approval",
+      "sourceUrl": "https://support.google.com/cloud/answer/13463817?hl=en"
+    }
+  ],
+  "escalationPath": "Google Cloud Console support, or the verification team's clarification questions sent directly on a submitted review. Resubmission is free but restarts the review clock.",
+  "sources": [
+    {
+      "title": "Google Cloud: OAuth app verification FAQ",
+      "url": "https://support.google.com/cloud/answer/13463817?hl=en",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "title": "Google OAuth app verification breakdown (third-party)",
+      "url": "https://singhamandeep.com/?p=1402",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "asOf": "2026-10-28",
+  "generatedBy": "library"
+}

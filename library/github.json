@@ -1,0 +1,44 @@
+{
+  "appName": "GitHub",
+  "appUrl": "https://github.com",
+  "tier": "self_serve",
+  "devAccessEstimate": "Same day, usually under 10 minutes",
+  "productionEstimate": "No separate production review is documented for standard OAuth apps. [VERIFY] this against GitHub's own docs before publishing, the fetched page did not explicitly confirm it, this reflects common developer practice rather than a stated policy.",
+  "steps": [
+    {
+      "order": 1,
+      "action": "Open your GitHub profile picture menu and click Settings, then Developer settings in the left sidebar",
+      "confidence": "verified",
+      "sourceUrl": "https://docs.github.com/en/enterprise-server@3.19/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app"
+    },
+    {
+      "order": 2,
+      "action": "Click OAuth apps, then New OAuth App (shown as \"Register a new application\" the first time)",
+      "confidence": "verified",
+      "sourceUrl": "https://docs.github.com/en/enterprise-server@3.19/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app"
+    },
+    {
+      "order": 3,
+      "action": "Fill in application name, homepage URL, and authorization callback URL. GitHub OAuth apps support only one callback URL",
+      "confidence": "verified",
+      "sourceUrl": "https://docs.github.com/en/enterprise-server@3.19/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app"
+    },
+    {
+      "order": 4,
+      "action": "Click Register application to get a client ID, then generate a client secret on the app's settings page",
+      "confidence": "verified",
+      "sourceUrl": "https://docs.github.com/en/enterprise-server@3.19/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app"
+    }
+  ],
+  "blockers": [],
+  "escalationPath": "GitHub Support (support.github.com) for account-level issues. No partner or business-review process exists for standard OAuth apps.",
+  "sources": [
+    {
+      "title": "GitHub Docs: Creating an OAuth App",
+      "url": "https://docs.github.com/en/enterprise-server@3.19/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "asOf": "2026-10-28",
+  "generatedBy": "library"
+}

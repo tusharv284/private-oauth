@@ -1,0 +1,63 @@
+{
+  "appName": "LinkedIn",
+  "appUrl": "https://www.linkedin.com/developers",
+  "tier": "manual_approval",
+  "devAccessEstimate": "Same day, but for Sign In with LinkedIn and basic profile only",
+  "productionEstimate": "2-8 weeks reported by developers for partner-program products (Marketing, Community Management, Sales Navigator, Talent). LinkedIn does not publish acceptance criteria or a guaranteed timeline.",
+  "steps": [
+    {
+      "order": 1,
+      "action": "Create a LinkedIn developer app in the Developer Portal, associated with a LinkedIn Company Page you administer",
+      "confidence": "reported",
+      "sourceUrl": "https://www.upload-post.com/linkedin-api-pricing/"
+    },
+    {
+      "order": 2,
+      "action": "Sign In with LinkedIn and basic Share APIs are available immediately with no partner approval needed",
+      "confidence": "reported",
+      "sourceUrl": "https://www.getphyllo.com/post/linkedin-api-access-in-2026-partner-program-approval-timeline-alternatives"
+    },
+    {
+      "order": 3,
+      "action": "Anything beyond that (Marketing Developer Platform, Community Management API, Sales Navigator, Talent Solutions) requires applying to the matching partner program under the app's Products tab, with a specific use-case justification",
+      "confidence": "reported",
+      "sourceUrl": "https://www.unipile.com/linkedin-api-a-comprehensive-guide-to-integration/"
+    },
+    {
+      "order": 4,
+      "action": "Expect a vetting and identity-review step as part of partner-program applications. Denials can be appealed through LinkedIn's contact form",
+      "confidence": "verified",
+      "sourceUrl": "https://learn.microsoft.com/lb-lu/linkedin/shared/linkedin-api-partner-support-guide"
+    }
+  ],
+  "blockers": [
+    {
+      "description": "LinkedIn does not provide public access to its APIs beyond basic sign-in. All further access requires joining the LinkedIn Partner Program, individual developers cannot simply register an app and start calling the API",
+      "sourceUrl": "https://www.unipile.com/linkedin-api-a-comprehensive-guide-to-integration/"
+    },
+    {
+      "description": "Approval criteria and acceptance rates for partner programs are not publicly documented beyond the listed process steps",
+      "sourceUrl": "https://vorplabs.com/agent-tools/linkedin-cli"
+    }
+  ],
+  "escalationPath": "LinkedIn's Contact form for vetting appeals. No published support SLA for partner-program applications, treat the 2-8 week range as unofficial.",
+  "sources": [
+    {
+      "title": "LinkedIn API Access in 2026: Partner Program, Approval Timeline & Alternatives",
+      "url": "https://www.getphyllo.com/post/linkedin-api-access-in-2026-partner-program-approval-timeline-alternatives",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "title": "LinkedIn API: A Comprehensive Guide to Integration",
+      "url": "https://www.unipile.com/linkedin-api-a-comprehensive-guide-to-integration/",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "title": "LinkedIn API Partner Support Guide (Microsoft Learn, hosting LinkedIn's own docs)",
+      "url": "https://learn.microsoft.com/lb-lu/linkedin/shared/linkedin-api-partner-support-guide",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "asOf": "2026-10-28",
+  "generatedBy": "library"
+}
